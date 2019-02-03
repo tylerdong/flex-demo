@@ -1,0 +1,28 @@
+/**
+  eslint: JavaScript是一种动态且松散类型的语言，容易出现开发人员错误。如果没有编译过程的好处，通常会执行JavaScript代码以查找语法或其他错误。
+像ESLint这样的Linting工具允许开发人员在不执行JavaScript代码的情况下发现JavaScript代码的问题。
+  特点：易于扩展，可自定义规则，可以插件形式安装更多的规则。
+
+  jslint: JSHint是一个社区驱动的工具，可以检测JavaScript代码中的错误和潜在问题。由于JSHint非常灵活，您可以在希望代码执行的环境中轻松调整它。
+JSHint是开源的，并将永远保持这种状态。
+  特点：古老，不可配置，不可扩展，不可禁用许多特性的校验
+*/
+{
+  //  指定解析器
+  "parser": "babel-eslint",
+  // 指定环境
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  // 指定全局变量
+  "globals": {
+    "browser": true
+  },
+  // 配置插件
+  "extends": [
+    "eslint:recommended"
+  ]
+}
