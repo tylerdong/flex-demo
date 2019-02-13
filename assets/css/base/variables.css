@@ -1,0 +1,6 @@
+/*:root 选择器匹配文档根元素, 在 HTML 中，根元素始终是 html 元素*/
+:root {
+  --space: 1.5em;
+  --space-lg: 2em;
+  --bg-color: hsl(150, 45%, 50%);
+}
