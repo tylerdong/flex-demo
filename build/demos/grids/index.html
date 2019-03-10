@@ -53,7 +53,31 @@
 <main class="Site-content">
     <div class="Container">
         <h1>Butter, Simpler Grid System</h1>
-        
+        <p>Most grid systems today use one of two layout methods: <code>float</code> or `inline-block . But neither of these methods were really intended to be used for layout and as result have pretty significant problems and limitations.</p>
+<p>Using floats requires clearing the which has a whole host of layout issues, most most notoriously that clearing an element sometimes forces it below an unrelated part (take this <a href="https://github.com/twbs/bootstrap/issues/295#issuecomment-2282969">Bootstrap issue</a> for example). In addition, clearing float usually requires using both before and after pseudo-elements, preventing you from using them for something else.</p>
+<p>Inline block layouts must address the problem of <a href="https://github.com/twbs/bootstrap/issues/295#issuecomment-2282969">white-space between inline-block items</a>, and all of the <a href="http://davidwalsh.name/remove-whitespace-inline-block">solutions</a> to that problem are <a href="https://github.com/suitcss/components-grid/blob/master/lib/grid.css#L30">hacky</a> and <a href="https://twitter.com/thierrykoblentz/status/305152267374428160">annoying</a>.</p>
+<p>Flexbox not eliminates these problems, it opens an entirely new world of possibilities.</p>
+<h2>Features of Flexbox Grid System</h2>
+<p>Grid system usually come with a myriad of sizing options, but the vast majority of the time you just want tow or three elements side-by-side.Given this, why should we be required to put sizing classes on every single cells?</p>
+<p>Listed blow are some of my criteria for an ideal grid system. Fortunately, with Flexbox we get most of there features for free.</p>
+<ul>
+<li>By default, each grid cell is the same width and height as every other cell in the row. Basically they all size to fit by default.</li>
+<li>For finer control, you can add sizing classes to individual cells. Without these classes, the cells simply divide up the available space as usual.</li>
+<li>For responsive grids, you can add media query-specific classes to the cells.</li>
+<li>Individual cells can be aligned vertically to the top, bottom, or middle.</li>
+<li>When you want all of the cells in a grid to have the same sizing, media, or alignment values, you should be able to just add a single class to the container to avoid unnecessary repetition.</li>
+<li>Grids can be nested as many levels deep as needed.</li>
+</ul>
+<h3>Basic Grids</h3>
+<p>The grid cells below do not specify any widths, they just naturally space themselves equally and expand to fit the entire row. They’re also equal height by default.</p>
+<div class="Grid Grid--gutters u-textCenter">
+  <div class="Grid-cell">
+    <div class="Demo">1/2</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">1/2</div>
+  </div>
+</div>
     </div>
 </main>
 <footer class="Site-footer">

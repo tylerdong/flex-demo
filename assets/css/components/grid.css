@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+.Grid-cell {
+  flex: 1;
+}
 
 .Grid--guttersLg {
   margin: -1.5em 0 1.5em -1.5em;

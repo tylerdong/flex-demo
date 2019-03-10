@@ -6,6 +6,8 @@
 @import "./base/custom-media.css";
 @import "./base/elements.css";
 
+@import "./components/feature.css";
+@import "./components/grid.css";
 @import "./components/header.css";
 @import "./components/button.css";
 @import "./components/container.css";
