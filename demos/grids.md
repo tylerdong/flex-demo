@@ -79,3 +79,297 @@ The grid cells below do not specify any widths, they just naturally space themse
   </div>
 </div>
 
+### Individual Sizing
+
+When equal widths aren't what you want,you can add sizing classes to individual cells. Cells with out sizing classing classes simply divide up the remaining space as normal.
+
+The cell below labeled "auto" do not have sizing classes specified.
+
+<div class="Grid Grid--gutters u-textCenter">
+  <div class="Grid-cell u-1of2">
+    <div class="Demo">1/2</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">auto</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">auto</div>
+  </div>
+</div>
+
+<div class="Grid Grid--gutters u-textCenter">
+  <div class="Grid-cell">
+    <div class="Demo">auto</div>
+  </div>
+  <div class="Grid-cell u-1of3">
+    <div class="Demo">1/3</div>
+  </div>
+</div>
+
+<div class="Grid Grid--gutters u-textCenter">
+  <div class="Grid-cell u-1of4">
+    <div class="Demo">1/4</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">auto</div>
+  </div>
+  <div class="Grid-cell u-1of3">
+    <div class="Demo">1/3</div>
+  </div>
+</div>
+
+### Responsive
+
+Responsive Grids work by adding media classes to the Grid cells or containers. When those media values are met,the grids automatically adjust accordingly.
+
+The cells below should be full width by default and scaled to fit above `48em`.
+Resize your browser to see them in action.
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit u-textCenter">
+  <div class="Grid-cell">
+    <div class="Demo">Full / Halves</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">Full / Halves</div>
+  </div>
+</div>
+<div class="Grid Grid--gutters Grid--full large-Grid--fit u-textCenter">
+  <div class="Grid-cell">
+    <div class="Demo">Full / Thirds</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">Full / Thirds</div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">Full / Thirds</div>
+  </div>
+</div>
+
+### Grid-ception
+
+Grid components are infinitely nestable inside of other grid components.
+
+<div class="Grid Grid--gutters Grid--flexCells u-textCenter">
+  <div class="Grid-cell">
+    <div class="Demo">
+      <div class="Grid Grid--gutters u-textCenter">
+        <div class="Grid-cell u-1of3">
+          <div class="Demo">1/3</div>
+        </div>
+        <div class="Grid-cell">
+          <div class="Demo">
+            <div class="Grid Grid--gutters u-textCenter">
+              <div class="Grid-cell">
+                <div class="Demo">1/2</div>
+              </div>
+              <div class="Grid-cell">
+                <div class="Demo">1/2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-1of3">
+    <div class="Demo">1/3</div>
+  </div>
+</div>
+
+## Alignment Features
+
+### Top-aligned Grid Cells
+<div class="Grid Grid--gutters Grid--top">
+  <div class="Grid-cell">
+    <div class="Demo">
+      This cell should be top-aligned.
+    </div>
+  </div>
+  <div class="Grid-cell u-1of2">
+    <div class="Demo">
+      Pellentesque sagittis vel erat ac laoreet. Phasellus ac aliquet enim, eu aliquet sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar porta leo, eu ultricies nunc sollicitudin vitae. Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh.
+    </div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">
+      This cell should be top-aligned.
+    </div>
+  </div>
+</div>
+
+### Bottom-alignment Grid Cells
+
+<div class="Grid Grid--gutters Grid--bottom">
+  <div class="Grid-cell">
+    <div class="Demo">
+      This cell should be bottom-aligned.
+    </div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">
+      Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh. Ut interdum ligula id metus hendrerit cursus. Integer eu leo felis. Aenean commodo ultrices nunc, sit amet blandit elit gravida in.
+    </div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">
+      This cell should be bottom-aligned.
+    </div>
+  </div>
+</div>
+
+### Vertically Centered Grid Cells
+
+<div class="Grid Grid--gutters Grid--center">
+  <div class="Grid-cell">
+    <div class="Demo">
+      This cell should be vertically-centered with the cell to its right.
+    </div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">
+      Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh. Ut interdum ligula id metus hendrerit cursus. Integer eu leo felis. Aenean commodo ultrices nunc, sit amet blandit elit gravida in. Sed est ligula, ornare ac nisi adipiscing, iaculis facilisis tellus. Nullam vel facilisis libero. Duis semper lobortis elit, vitae dictum erat.</div>
+  </div>
+</div>
+
+### Mixed Vertical Alignment
+
+<div class="Grid Grid--gutters">
+  <div class="Grid-cell Grid-cell--top">
+    <div class="Demo">
+      This cell should be top aligned.
+    </div>
+  </div>
+  <div class="Grid-cell">
+    <div class="Demo">
+      Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh. Ut interdum ligula id metus hendrerit cursus. Integer eu leo felis. Aenean commodo ultrices nunc, sit amet blandit elit gravida in. Sed est ligula, ornare ac nisi adipiscing, iaculis facilisis tellus.</div>
+  </div>
+  <div class="Grid-cell Grid-cell--center">
+    <div class="Demo">
+      This cell should be center-aligned.
+    </div>
+  </div>
+  <div class="Grid-cell Grid-cell--bottom">
+    <div class="Demo">
+      This cell should be bottom-aligned.
+    </div>
+  </div>
+</div>
+
+## The HTML
+
+```html
+<div class="Grid">
+  <div class="Grid-cell">…</div>
+  <div class="Grid-cell">…</div>
+  <div class="Grid-cell">…</div>
+</div>
+```
+
+## The CSS
+
+### Basic Grid Styles
+
+```css
+.Grid {
+  display: flex;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+```
+
+### Grid Style Modifiers
+
+```css
+/* With gutters */
+.Grid--gutters {
+  margin: -1em 0 0 -1em;
+}
+.Grid--gutters > .Grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+/* Alignment per row */
+.Grid--top {
+  align-items: flex-start;
+}
+.Grid--bottom {
+  align-items: flex-end;
+}
+.Grid--center {
+  align-items: center;
+}
+
+/* Alignment per cell */
+.Grid-cell--top {
+  align-self: flex-start;
+}
+.Grid-cell--bottom {
+  align-self: flex-end;
+}
+.Grid-cell--center {
+  align-self: center;
+}
+```
+
+### Responsive Modifiers (a mobile-first approach)
+
+```css
+/* Base classes for all media */
+.Grid--fit > .Grid-cell {
+  flex: 1;
+}
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%;
+}
+.Grid--1of2 > .Grid-cell {
+  flex: 0 0 50%
+}
+.Grid--1of3 > .Grid-cell {
+  flex: 0 0 33.3333%
+}
+.Grid--1of4 > .Grid-cell {
+  flex: 0 0 25%
+}
+
+/* Small to medium screens */
+@media (min-width: 24em) {
+  .small-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .small-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .small-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%
+  }
+  .small-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%
+  }
+  .small-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%
+  }
+}
+
+/* Large screens */
+@media (min-width: 48em) {
+  .large-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .large-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .large-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%
+  }
+  .large-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%
+  }
+  .large-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%
+  }
+}
+```
+
+View the full [source](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css) for the `Grid` component used in this demo on Github.

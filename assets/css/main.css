@@ -15,3 +15,5 @@
 @import "./components/media.css";
 @import "./components/section.css";
 @import "./components/site.css";
+
+@import "./vendor/highlight.css";
